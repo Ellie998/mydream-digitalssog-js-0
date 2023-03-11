@@ -4,32 +4,74 @@
   <body>
     <header></header>
     <main>
-      <section>
-        <h1>어플명</h1>
-        <img src="" alt="어플 사진" />
-        <div>
+      <section id="app-intro">
+        <h1>어플 소개</h1>
+        <h2>어플명 : Message</h2>
+        <a
+          href="https://apps.apple.com/us/app/messages/id1146560473?itscg=30200&amp;itsct=apps_box_appicon"
+          id="app-img"
+          style="
+            width: 170px;
+            height: 170px;
+            border-radius: 22%;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+          "
+          ><img
+            src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/d9/ac/74/d9ac7466-bcca-0432-807f-2f377c62abce/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/540x540bb.jpg"
+            alt="Messages"
+            style="
+              width: 170px;
+              height: 170px;
+              border-radius: 22%;
+              overflow: hidden;
+              display: inline-block;
+              vertical-align: middle;
+            "
+        /></a>
+        <div id="app-description">
           <h2>어플 특징</h2>
           <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              facere velit quae incidunt harum cum tempore ß
-            </li>
+            <li>문자를 보낼 수 있다.</li>
           </ul>
         </div>
-        <a href="">playstore로 이동하기</a>
-        <a href="">appstore로 이동하기</a>
       </section>
-      <section>
-        <h2>사용 기능 정리</h2>
-        <ul>
-          <li>메세지 보내기</li>
-          <li>메세지 삭제하기</li>
-          <li>메세지 전달하기</li>
-        </ul>
-        <div>화면 띄우는 블럭</div>
+      <section id="app-use">
+        <div class="wrap">
+          <h2>사용 기능 정리</h2>
+          <ul>
+            <li>메세지 보내기</li>
+            <li>메세지 삭제하기</li>
+            <li>메세지 전달하기</li>
+          </ul>
+
+          <div id="display-box">화면 띄우는 블럭</div>
+          <button class="btn">직접 체험하러 GO!</button>
+        </div>
       </section>
-      <section>
-        <button>어플 다운받지 않고 체험해보기</button>
+      <section id="app-download" class="">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.chating.messages.chat.fun&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          ><img
+            alt="다운로드하기 Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png"
+            style="width: 250px; height: 83px"
+        /></a>
+        <a
+          href="https://apps.apple.com/us/app/messages/id1146560473?itsct=apps_box_badge&amp;itscg=30200"
+          style="
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 13px;
+            width: 250px;
+            height: 83px;
+          "
+          ><img
+            src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83&amp;releaseDate=1635120000"
+            alt="Download on the App Store"
+            style="border-radius: 13px; width: 250px; height: 83px"
+        /></a>
       </section>
     </main>
     <footer>
@@ -50,6 +92,7 @@
           return response.text();
         })
         .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appDetail.css">';
           document.querySelector("header").innerHTML = data;
         });
     </script>

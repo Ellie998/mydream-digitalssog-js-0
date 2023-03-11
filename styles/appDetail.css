@@ -1,0 +1,86 @@
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  font-size: 3rem;
+  padding: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  flex: none;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+#app-intro {
+  padding: 3rem 4rem 15rem 4rem;
+  width: 60%;
+
+}
+
+#app-img {
+  position: absolute;
+  right : 30px;
+}
+
+#app-description {
+  padding: 3rem 0;
+}
+
+#app-use {
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  padding: 5rem;
+  box-shadow: 0 8px 8px rgba(23, 23, 23, 0.077);
+  display: flex;
+}
+
+.wrap {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#app-use h2 {
+  margin: 2rem 0 5rem 0;
+  grid-column: 1 / 3;
+}
+
+/* #app-use ul {
+  grid-row: 2 / 4;
+} */
+
+#app-use ul li {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+#app-use ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#app-use button {
+  font-size: 1.25rem;
+  margin: 5rem auto;
+  width: 14rem;
+  grid-column: 1 / 3;
+}
+
+
+#display-box {
+  width: 100%;
+  height: 40rem;
+  background-color: white;
+}
+
+#app-download {
+  padding: 10rem;
+}

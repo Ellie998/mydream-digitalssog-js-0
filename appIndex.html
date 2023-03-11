@@ -11,64 +11,64 @@
       </section>
       <section>
         <ul>
-          <li>
-            <p>건강</p>
+          <li class="category-wrap">
+            <h3>건강</h3>
             <ol>
               <li>런데이</li>
               <li>다신샵</li>
             </ol>
           </li>
-          <li>
-            <p>SNS</p>
+          <li class="category-wrap">
+            <h3>SNS</h3>
             <ol>
               <li>카카오톡</li>
               <li>instargram</li>
             </ol>
           </li>
-          <li>
-            <p>생산성</p>
+          <li class="category-wrap">
+            <h3>생산성</h3>
             <ol>
               <li>노션</li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>GAME</p>
+          <li class="category-wrap">
+            <h3>GAME</h3>
             <ol>
               <li></li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>생산성</p>
+          <li class="category-wrap">
+            <h3>생산성</h3>
             <ol>
               <li></li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>사진</p>
+          <li class="category-wrap">
+            <h3>사진</h3>
             <ol>
               <li></li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>운동</p>
+          <li class="category-wrap">
+            <h3>운동</h3>
             <ol>
               <li></li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>라이프스타일</p>
+          <li class="category-wrap">
+            <h3>라이프스타일</h3>
             <ol>
               <li></li>
               <li></li>
             </ol>
           </li>
-          <li>
-            <p>여행</p>
+          <li class="category-wrap">
+            <h3>여행</h3>
             <ol>
               <li></li>
               <li></li>
@@ -95,6 +95,7 @@
           return response.text();
         })
         .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appIndex.css">';
           document.querySelector("header").innerHTML = data;
         });
     </script>
