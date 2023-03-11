@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>어플명</h1>
+        <img src="" alt="어플 사진" />
+        <div>
+          <h2>어플 특징</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              facere velit quae incidunt harum cum tempore ß
+            </li>
+          </ul>
+        </div>
+        <a href="">playstore로 이동하기</a>
+        <a href="">appstore로 이동하기</a>
+      </section>
+      <section>
+        <h2>사용 기능 정리</h2>
+        <ul>
+          <li>메세지 보내기</li>
+          <li>메세지 삭제하기</li>
+          <li>메세지 전달하기</li>
+        </ul>
+        <div>화면 띄우는 블럭</div>
+      </section>
+      <section>
+        <button>어플 다운받지 않고 체험해보기</button>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © upps</p>
+    </footer>
+
+    <script>
+      fetch("views/head.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("head").innerHTML = data;
+        });
+
+      fetch("views/header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

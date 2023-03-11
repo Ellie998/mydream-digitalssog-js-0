@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>app index page</h1>
+        <h2>카테고리별 어플 순위</h2>
+        <p>궁금한 어플을 클릭하면 설명과 체험 공간이 나옵니다.</p>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <p>건강</p>
+            <ol>
+              <li>런데이</li>
+              <li>다신샵</li>
+            </ol>
+          </li>
+          <li>
+            <p>SNS</p>
+            <ol>
+              <li>카카오톡</li>
+              <li>instargram</li>
+            </ol>
+          </li>
+          <li>
+            <p>생산성</p>
+            <ol>
+              <li>노션</li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>GAME</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>생산성</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>사진</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>운동</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>라이프스타일</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>
+            <p>여행</p>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © upps</p>
+    </footer>
+
+    <script>
+      fetch("views/head.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("head").innerHTML = data;
+        });
+
+      fetch("views/header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
