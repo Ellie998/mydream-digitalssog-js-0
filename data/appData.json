@@ -258,7 +258,7 @@
   {
     "순번": 17,
     "name": "티머니GO",
-    "category": "지도/네비게이션,여행 및 지역정보",
+    "category": ["지도/네비게이션", "여행 및 지역정보"],
     "downNum": null,
     "downLink": null,
     "star": null,
@@ -370,7 +370,7 @@
   {
     "순번": 24,
     "name": "틱톡",
-    "category": "동영상 플레이어/편집기/소셜",
+    "category": ["동영상 플레이어", "편집기", "소셜"],
     "downNum": null,
     "downLink": null,
     "star": null,
@@ -418,7 +418,7 @@
   {
     "순번": 27,
     "name": "카카오 T",
-    "category": "지도/내비게이션. 여행 및 지역정보",
+    "category": ["지도/내비게이션", "여행 및 지역정보"],
     "downNum": null,
     "downLink": null,
     "star": null,
@@ -546,7 +546,7 @@
   {
     "순번": 35,
     "name": "zoom",
-    "category": "비즈니스, 커뮤니케이션, 영상채팅",
+    "category": ["비즈니스", "커뮤니케이션", "영상채팅"],
     "downNum": null,
     "downLink": null,
     "star": null,
@@ -626,7 +626,7 @@
   {
     "순번": 40,
     "name": "코레일톡",
-    "category": "여행 및 지역정보, 대중교통",
+    "category": ["여행 및 지역정보", "대중교통"],
     "downNum": null,
     "downLink": null,
     "star": null,
