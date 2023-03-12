@@ -5,37 +5,28 @@
     <header></header>
     <main>
       <section id="app-intro">
-        <h1>어플 소개</h1>
-        <h2>어플명 : Message</h2>
-        <a
-          href="https://apps.apple.com/us/app/messages/id1146560473?itscg=30200&amp;itsct=apps_box_appicon"
-          id="app-img"
-          style="
-            width: 170px;
-            height: 170px;
-            border-radius: 22%;
-            overflow: hidden;
-            display: inline-block;
-            vertical-align: middle;
-          "
-          ><img
-            src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/d9/ac/74/d9ac7466-bcca-0432-807f-2f377c62abce/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/540x540bb.jpg"
-            alt="Messages"
-            style="
-              width: 170px;
-              height: 170px;
-              border-radius: 22%;
-              overflow: hidden;
-              display: inline-block;
-              vertical-align: middle;
-            "
-        /></a>
-        <div id="app-description">
-          <h2>어플 특징</h2>
-          <ul>
-            <li>문자를 보낼 수 있다.</li>
-          </ul>
-        </div>
+        <h1>Message 어플 소개</h1>
+        <!-- <h2>어플명 : Message</h2> -->
+        <ul id="app-description">
+          <li>
+            <h2>어플 특징</h2>
+            <p>문자를 보낼 수 있다.</p>
+          </li>
+          <li>
+            <img
+              src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/d9/ac/74/d9ac7466-bcca-0432-807f-2f377c62abce/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/540x540bb.jpg"
+              alt="Messages"
+              style="
+                width: 170px;
+                height: 170px;
+                border-radius: 22%;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+              "
+            />
+          </li>
+        </ul>
       </section>
       <section id="app-use">
         <div class="wrap">
@@ -84,6 +75,7 @@
           return response.text();
         })
         .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appDetail.css">';
           document.querySelector("head").innerHTML = data;
         });
 
@@ -92,7 +84,6 @@
           return response.text();
         })
         .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/appDetail.css">';
           document.querySelector("header").innerHTML = data;
         });
     </script>

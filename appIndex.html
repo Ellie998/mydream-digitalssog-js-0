@@ -87,17 +87,17 @@
           return response.text();
         })
         .then((data) => {
+          data = data + '<link rel="stylesheet" href="./styles/appIndex.css">';
           document.querySelector("head").innerHTML = data;
         });
-
       fetch("views/header.html")
         .then((response) => {
           return response.text();
         })
         .then((data) => {
-          data = data + '<link rel="stylesheet" href="./styles/appIndex.css">';
           document.querySelector("header").innerHTML = data;
         });
     </script>
+    <script src="./scripts/getData.js"></script>
   </body>
 </html>
