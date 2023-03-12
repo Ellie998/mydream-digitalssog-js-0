@@ -1,5 +1,6 @@
-const appData = [];
+const appData = new Array();
 const appNameElements = document.querySelectorAll(".category-wrap h3");
+const checkElement = document.getElementById("check");
 
 // read local JSON file in javascript
 fetch("../data/appData.json")
@@ -11,12 +12,17 @@ fetch("../data/appData.json")
       appData.push(item);
       for (const appItem of appNameElements) {
         if (item.category == appItem.innerText) {
-          console.log(item.name);
           const newList = document.createElement("li");
-          newList.innerText = item.name;
+          const newAnchor = document.createElement("a");
+          const newAttribute = document.createAttribute("href");
+
+          newAnchor.innerText = item.name;
+          newAttribute.value = `../appDetail.html#${item.name}`;
+
           appItem.nextElementSibling.appendChild(newList);
+          newList.appendChild(newAnchor);
+          newAnchor.setAttributeNode(newAttribute);
         }
       }
     }
-    // console.dir(appData[0].name);
   });
