@@ -10,7 +10,6 @@ fetch("../data/appData.json")
   .then(function (data) {
     for (const item of data) {
       appData.push(item);
-      console.log(item);
       for (const appItem of appNameElements) {
         if (item.category == appItem.innerText) {
           const newList = document.createElement("li");
